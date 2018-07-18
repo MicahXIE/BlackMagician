@@ -17,6 +17,12 @@ we see a difference of 7 hours. which is 7x3600 seconds or 25200 seconds.
 Similarly, in the second query, time difference is 5 hours and 
 30 minutes for time zone adjusting for that we have a difference of 1 day and 30 minutes. Or 
 24 x 3600 + 30 x 60 = 88200
+
+# 格式化成2016-03-20 11:45:39形式
+print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
+# 格式化成Sat Mar 28 22:24:24 2016形式
+print time.strftime("%a %b %d %H:%M:%S %Y", time.localtime())
+
 '''
 
 import math
