@@ -11,6 +11,16 @@ On the first line, output the number of distinct words from the input.
 On the second line, output the number of occurrences for each distinct word according to their appearance in the input.
 
 Sample Input
+4
+bcdef
+abcdefg
+bcde
+bcdef
+
+Sample Output
+3
+2 1 1
+
 '''
 
 # method 1 fail when submit code, still confused, guess due to the dictionary is not ordered
