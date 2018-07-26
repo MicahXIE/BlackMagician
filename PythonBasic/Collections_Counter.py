@@ -36,6 +36,22 @@ Customer 5: Purchased size 18 shoe for $60.
 Customer 6: Size 10 not available, so no purchase.
 
 Total money earned =  55 + 45 + 40 + 60 = $200
+
+>>> from collections import Counter
+>>> 
+>>> myList = [1,1,2,3,4,5,3,2,3,4,2,1,2,3]
+>>> print Counter(myList)
+Counter({2: 4, 3: 4, 1: 3, 4: 2, 5: 1})
+>>>
+>>> print Counter(myList).items()
+[(1, 3), (2, 4), (3, 4), (4, 2), (5, 1)]
+>>> 
+>>> print Counter(myList).keys()
+[1, 2, 3, 4, 5]
+>>> 
+>>> print Counter(myList).values()
+[3, 4, 4, 2, 1]
+
 '''
 
 from collections import Counter
