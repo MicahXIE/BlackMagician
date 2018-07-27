@@ -1,0 +1,23 @@
+1. Dictionaries are unordered in Python. If you do care about the order of the entries, starting with Python 2.7 you can use collections.OrderedDict.
+
+2. Construct OrderedCounter
+
+from collections import OrderedDict, Counter
+
+class OrderedCounter(Counter, OrderedDict):
+    pass
+
+3. sorted list based on second value then first value
+d = [('B', 3), ('A', 2), ('A', 1), ('I', 1), ('J', 1)]
+sorted(d,key=lambda x:(-x[1],x[0]))
+Since your "values" are numeric, you can easily reverse the sort order by changing the sign.
+
+If your values can't so easily be "negated" to put big items first, an easy work-around is to sort twice:
+
+from operator import itemgetter
+d.sort(key=itemgetter(0))
+d.sort(key=itemgetter(1),reverse=True)
+which works because python's sorting is stable.
+
+
+
