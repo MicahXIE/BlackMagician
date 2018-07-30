@@ -19,5 +19,27 @@ d.sort(key=itemgetter(0))
 d.sort(key=itemgetter(1),reverse=True)
 which works because python's sorting is stable.
 
+4. sum & len
+>>>sum([0,1,2])  
+3  
+>>> sum((2, 3, 4), 1)        # 元组计算总和后再加 1
+10
+>>> sum([0,1,2,3,4], 2)      # 列表计算总和后再加 2
+12
+
+Python len() 方法返回对象（字符、列表、元组等）长度或项目个数。
+>>>str = "runoob"
+>>> len(str)             # 字符串长度
+6
+>>> l = [1,2,3,4,5]
+>>> len(l)               # 列表元素个数
+5
+
+5. map
+>>> arr = map(int,input().split())
+1 2 3
+>>> type(arr)
+<class 'map'>
+
 
 
