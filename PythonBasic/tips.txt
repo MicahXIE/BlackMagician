@@ -43,3 +43,33 @@ Python len() 方法返回对象（字符、列表、元组等）长度或项目�
 
 
 
+6. * and ** usage:
+The single star * unpacks the sequence/collection into positional arguments, so you can do this:
+
+def sum(a, b):
+    return a + b
+
+values = (1, 2)
+
+s = sum(*values)
+This will unpack the tuple so that it actually executes as:
+
+s = sum(1, 2)
+The double star ** does the same, only using a dictionary and thus named arguments:
+
+values = { 'a': 1, 'b': 2 }
+s = sum(**values)
+You can also combine:
+
+def sum(a, b, c, d):
+    return a + b + c + d
+
+values1 = (1, 2)
+values2 = { 'c': 10, 'd': 15 } # must 'c' and 'd' same as sum paras
+s = sum(*values1, **values2)
+will execute as:
+
+s = sum(1, 2, c=10, d=15)
+
+
+
