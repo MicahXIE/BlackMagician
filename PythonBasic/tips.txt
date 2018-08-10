@@ -92,7 +92,28 @@ a.intersection(b) or a&b
 set a, b difference:
 a.difference(b) or a - set(b)
 
+set a, b symmetric difference:
+a.symmetric_difference(b) or a^set(b)
+
+extend:
+.update() |=
+.intersection_update() &=
+.difference_update() -=
+.symmetric_difference_update() ^=
+
 8. enumerate, yield
+
+
+
+
+
+9. Counter example pls refer to example The_Captain_Room.py
+
+c = Counter(lst)
+
+for k,v in c.items():
+    if v == 1:
+        print(k)
 
 
 
