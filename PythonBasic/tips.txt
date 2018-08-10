@@ -72,4 +72,12 @@ will execute as:
 s = sum(1, 2, c=10, d=15)
 
 
+7. https://www.hackerrank.com/challenges/symmetric-difference/problem
+very good example for introduction the functions of set
+
+https://www.programiz.com/python-programming/methods/built-in/sorted
+set sorted reference
+
+
+
 

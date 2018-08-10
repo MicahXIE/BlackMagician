@@ -17,6 +17,7 @@ TESTCASE 01
 
 78.00
 
+refer to tip.txt item 6
 
 Note: 
 1. Columns can be in any order. IDs, marks, class and name can be written in any order in the spreadsheet. 
