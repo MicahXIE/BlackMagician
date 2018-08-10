@@ -78,6 +78,31 @@ very good example for introduction the functions of set
 https://www.programiz.com/python-programming/methods/built-in/sorted
 set sorted reference
 
+set s size: len(s)
+
+https://www.hackerrank.com/challenges/py-set-discard-remove-pop/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+set remove and discard difference
+
+set a, b union:
+a.union(b) or a|b
+
+set a, b intersection:
+a.intersection(b) or a&b
+
+set a, b difference:
+a.difference(b) or a - set(b)
+
+8. enumerate, yield
+
+
+
+
+
+
+
+
+
+
 
 
 
