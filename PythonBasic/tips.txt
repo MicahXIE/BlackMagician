@@ -120,6 +120,23 @@ for k,v in c.items():
 pls refer to Check_Strict_Superset.py file
 
 
+11. math pow
+
+print(a**b)
+print(a**b%m)
+#print(pow(a,b))
+#print(pow(a,b,m))
+
+
+12. Integers
+Integers in Python can be as big as the bytes in your machine's memory. There is no limit in size as there is: 2^31-1 (c++ int) or 2^63-1 (C++ long long int).
+
+
+
+
+
+
+
 
 
 
