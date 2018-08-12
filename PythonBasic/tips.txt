@@ -133,6 +133,31 @@ Integers in Python can be as big as the bytes in your machine's memory. There is
 
 
 
+13. itertools combinations and combinations_with_replacement
+
+
+>>> A = [1,1,3,3,3]
+>>> print list(combinations(A,2))
+[(1, 1), (1, 3), (1, 3), (1, 3), (1, 3), (1, 3), (1, 3), (3, 3), (3, 3), (3, 3)]
+
+
+14. Built-in functions
+
+Zipped:
+>>> print zip([1,2,3,4,5,6],'Hacker')
+[(1, 'H'), (2, 'a'), (3, 'c'), (4, 'k'), (5, 'e'), (6, 'r')]
+>>> 
+>>> print zip([1,2,3,4,5,6],[0,9,8,7,6,5,4,3,2,1])
+[(1, 0), (2, 9), (3, 8), (4, 7), (5, 6), (6, 5)]
+
+two-dimensional array sort:
+1)
+sorted(li,key=lambda l:l[1], reverse=True)
+[[2, 0.39], [4, 0.31], [5, 0.27], [1, 0.23]]
+2)
+from operator import itemgetter
+outputlist = sorted(inputlist, key=itemgetter(1), reverse=True)
+
 
 
 
