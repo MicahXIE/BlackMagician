@@ -159,6 +159,30 @@ from operator import itemgetter
 outputlist = sorted(inputlist, key=itemgetter(1), reverse=True)
 
 
+Any or All:
+>>> any([1>0,1==0,1<0])
+True
+>>> all(['a'<'b','b'<'c'])
+True
+
+palindromic integer 回文的整数
+
+
+15. map and split()
+
+>>> mp = map(int, input().strip().split())
+1 2 3
+>>> mp
+<map object at 0x105ea6198>
+
+>>> sp = input().strip().split()
+1 2 3
+>>> sp
+['1', '2', '3']
+>>> type(sp)
+<class 'list'>
+
+
 
 
 
