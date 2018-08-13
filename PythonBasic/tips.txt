@@ -167,6 +167,12 @@ True
 
 palindromic integer 回文的整数
 
+>>> s = 'abc'
+>>> sorted(s)
+['a', 'b', 'c']
+>>> 
+after sorted, string change to list
+
 
 15. map and split()
 
