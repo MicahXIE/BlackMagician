@@ -11,6 +11,8 @@ Sample Output
 
 ginortS1324
 
+Explore the lambda solution and understand multiple sorting rules in lambda key
+
 '''
 
 s = input().strip()
