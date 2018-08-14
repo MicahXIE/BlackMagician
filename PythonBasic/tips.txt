@@ -199,6 +199,28 @@ after sorted, string change to list
 6
 
 
+>>> l = list(range(10))
+>>> l
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> l = list(map(lambda x:x*x, l))
+>>> l
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> l = list(filter(lambda x: x > 10 and x < 80, l))
+>>> l
+[16, 25, 36, 49, 64]
+>>> 
+
+
+
+
+17. re.compile, re.match and re.search
+
+
+
+
+
+
+
 
 
 
