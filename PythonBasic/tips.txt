@@ -189,6 +189,14 @@ after sorted, string change to list
 <class 'list'>
 
 
+16. map, reduce, filter
+
+>> print (list(map(len, ['Tina', 'Raj', 'Tom'])))  
+[4, 3, 3] 
+
+>> sum = lambda a, b, c: a + b + c
+>> sum(1, 2, 3)
+6
 
 
 
