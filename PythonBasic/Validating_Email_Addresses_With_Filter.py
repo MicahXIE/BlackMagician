@@ -40,7 +40,7 @@ def fun(s):
 
 # method 2
 def fun2(s):
-    a = re.match(r'[\w_-]+@[\w]+\.[a-zA-Z]{1,3}$',s)
+    a = re.match(r'[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$',s)
     return(a)
 
 
