@@ -221,6 +221,19 @@ You can also define an initial value. If it is specified, the function will assu
 3
 
 
+Python Fraction:
+from fractions import Fraction
+
+>>> Fraction(5, 16) - Fraction(1, 4)
+Fraction(1, 16)
+>>> Fraction(1, 16) * Fraction(3, 16)
+Fraction(3, 256)
+>>> Fraction(3, 16) / Fraction(1, 8)
+Fraction(3, 2)
+
+reference: http://python.jobbole.com/81213/
+
+
 
 17. re.compile, re.match and re.search
 
