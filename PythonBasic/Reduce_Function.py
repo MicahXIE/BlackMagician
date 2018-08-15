@@ -24,6 +24,9 @@ if __name__ == '__main__':
     fracs = []
     for _ in range(int(input())):
         fracs.append(Fraction(*map(int, input().split())))
+    
+    # fracs: [Fraction(1, 2), Fraction(3, 4), Fraction(5, 3)]
     result = product(fracs)
+    # (5, 8) <class 'tuple'>
     print(*result)
 
