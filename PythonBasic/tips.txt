@@ -308,7 +308,26 @@ print numpy.concatenate((array_1, array_2), axis = 1)
 
 #Output
 [[1 2 3 0 0 0]
- [0 0 0 7 8 9]]  
+ [0 0 0 7 8 9]]
+
+
+5) zeros and ones
+import numpy
+
+print numpy.zeros((1,2))                    #Default type is float
+#Output : [[ 0.  0.]] 
+
+print numpy.zeros((1,2), dtype = numpy.int) #Type changes to int
+#Output : [[0 0]]
+
+
+print numpy.ones((1,2))                    #Default type is float
+#Output : [[ 1.  1.]] 
+
+print numpy.ones((1,2), dtype = numpy.int) #Type changes to int
+#Output : [[1 1]]   
+
+
 
 
 
