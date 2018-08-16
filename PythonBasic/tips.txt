@@ -370,6 +370,92 @@ print(*[eval('a1'+i+'a2') for i in ['+','-','*','//','%','**']], sep='\n')
 
 
 
+8) Floor, Ceil and Rint
+
+floor 
+The tool floor returns the floor of the input element-wise. 
+The floor of x is the largest integer i where i<=x.
+
+import numpy
+
+my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+print numpy.floor(my_array)         #[ 1.  2.  3.  4.  5.  6.  7.  8.  9.]
+
+
+ceil 
+The tool ceil returns the ceiling of the input element-wise. 
+The ceiling of x is the smallest integer i where i>=x.
+
+import numpy
+
+my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+print numpy.ceil(my_array)          #[  2.   3.   4.   5.   6.   7.   8.   9.  10.]
+
+
+
+rint 
+The rint tool rounds to the nearest integer of input element-wise.
+
+import numpy
+
+my_array = numpy.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+print numpy.rint(my_array)          #[  1.   2.   3.   4.   6.   7.   8.   9.  10.]
+
+
+numpy.set_printoptions(sign=' ')
+
+
+
+
+9) Sum and Prod
+
+sum
+import numpy
+
+my_array = numpy.array([ [1, 2], [3, 4] ])
+
+print numpy.sum(my_array, axis = 0)         #Output : [4 6]
+print numpy.sum(my_array, axis = 1)         #Output : [3 7]
+print numpy.sum(my_array, axis = None)      #Output : 10
+print numpy.sum(my_array)                   #Output : 10
+
+
+prod
+print numpy.prod(my_array, axis = 0)            #Output : [3 8]
+print numpy.prod(my_array, axis = 1)            #Output : [ 2 12]
+print numpy.prod(my_array, axis = None)         #Output : 24
+print numpy.prod(my_array)                      #Output : 24
+
+
+10) min and max
+
+min
+import numpy
+
+my_array = numpy.array([[2, 5], 
+                        [3, 7],
+                        [1, 3],
+                        [4, 0]])
+
+print numpy.min(my_array, axis = 0)         #Output : [1 0]
+print numpy.min(my_array, axis = 1)         #Output : [2 3 1 0]
+print numpy.min(my_array, axis = None)      #Output : 0
+print numpy.min(my_array)                   #Output : 0
+
+
+max
+import numpy
+
+my_array = numpy.array([[2, 5], 
+                        [3, 7],
+                        [1, 3],
+                        [4, 0]])
+
+print numpy.max(my_array, axis = 0)         #Output : [4 7]
+print numpy.max(my_array, axis = 1)         #Output : [5 7 3 4]
+print numpy.max(my_array, axis = None)      #Output : 7
+print numpy.max(my_array)                   #Output : 7
+
 
 
 
