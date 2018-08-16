@@ -328,7 +328,44 @@ print numpy.ones((1,2), dtype = numpy.int) #Type changes to int
 #Output : [[1 1]]   
 
 
+6) Eye and Identity
+import numpy
+print numpy.identity(3) #3 is for  dimension 3 X 3
 
+#Output
+[[ 1.  0.  0.]
+ [ 0.  1.  0.]
+ [ 0.  0.  1.]]
+
+
+print numpy.eye(8, 7, k = 1)    # 8 X 7 Dimensional array with first upper diagonal 1.
+
+#Output
+[[ 0.  1.  0.  0.  0.  0.  0.]
+ [ 0.  0.  1.  0.  0.  0.  0.]
+ [ 0.  0.  0.  1.  0.  0.  0.]
+ [ 0.  0.  0.  0.  1.  0.  0.]
+ [ 0.  0.  0.  0.  0.  1.  0.]
+ [ 0.  0.  0.  0.  0.  0.  1.]
+ [ 0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.]]
+
+
+print numpy.eye(8, 7, k = -2)   # 8 X 7 Dimensional array with second lower diagonal 1.
+
+
+
+7) Mathematics
+
+e.g
+
+print(*[eval('a1'+i+'a2') for i in ['+','-','*','//','%','**']], sep='\n')
+
+#print([a1+a2])
+#=>[array([[ 6,  8, 10, 12]])]
+
+#print(*[a1+a2])
+#=>[[ 6  8 10 12]]
 
 
 
