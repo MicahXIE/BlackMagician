@@ -403,6 +403,7 @@ print numpy.rint(my_array)          #[  1.   2.   3.   4.   6.   7.   8.   9.  1
 
 
 numpy.set_printoptions(sign=' ')
+numpy.set_printoptions(legacy='1.13')
 
 
 
@@ -456,6 +457,97 @@ print numpy.max(my_array, axis = 1)         #Output : [5 7 3 4]
 print numpy.max(my_array, axis = None)      #Output : 7
 print numpy.max(my_array)                   #Output : 7
 
+
+
+11) Mean, Var, and Std
+mean
+The mean tool computes the arithmetic mean along the specified axis.
+
+import numpy
+
+my_array = numpy.array([ [1, 2], [3, 4] ])
+
+print numpy.mean(my_array, axis = 0)        #Output : [ 2.  3.]
+print numpy.mean(my_array, axis = 1)        #Output : [ 1.5  3.5]
+print numpy.mean(my_array, axis = None)     #Output : 2.5
+print numpy.mean(my_array)                  #Output : 2.5
+
+
+var)(方差)
+The var tool computes the arithmetic variance along the specified axis.
+
+import numpy
+
+my_array = numpy.array([ [1, 2], [3, 4] ])
+
+print numpy.var(my_array, axis = 0)         #Output : [ 1.  1.]
+print numpy.var(my_array, axis = 1)         #Output : [ 0.25  0.25]
+print numpy.var(my_array, axis = None)      #Output : 1.25
+print numpy.var(my_array)                   #Output : 1.25
+
+
+std(标准差或均方差)
+
+The std tool computes the arithmetic standard deviation along the specified axis.
+
+import numpy
+
+my_array = numpy.array([ [1, 2], [3, 4] ])
+
+print numpy.std(my_array, axis = 0)         #Output : [ 1.  1.]
+print numpy.std(my_array, axis = 1)         #Output : [ 0.5  0.5]
+print numpy.std(my_array, axis = None)      #Output : 1.11803398875
+print numpy.std(my_array)                   #Output : 1.11803398875
+
+
+
+
+12) dot and cross
+
+dot
+The dot tool returns the dot product of two arrays.
+
+import numpy
+
+A = numpy.array([ 1, 2 ])
+B = numpy.array([ 3, 4 ])
+
+print numpy.dot(A, B)       #Output : 11
+
+
+cross
+The cross tool returns the cross product of two arrays.
+
+import numpy
+
+A = numpy.array([ 1, 2 ])
+B = numpy.array([ 3, 4 ])
+
+print numpy.cross(A, B)     #Output : -2
+
+
+13) Inner and Outer
+https://blog.csdn.net/dcrmg/article/details/52416832
+内积是一个向量在另一向量所在方向上的积，所以叫内积。
+外积是一个向量在另一向量的无关方向上的积，所以才叫外积。
+
+Inner
+import numpy
+
+A = numpy.array([0, 1])
+B = numpy.array([3, 4])
+
+print numpy.inner(A, B)     #Output : 4
+
+
+Outer
+import numpy
+
+A = numpy.array([0, 1])
+B = numpy.array([3, 4])
+
+print numpy.outer(A, B)     #Output : [[0 0]
+                            #          [3 4]]
 
 
 
