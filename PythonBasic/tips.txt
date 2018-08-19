@@ -550,6 +550,11 @@ print numpy.outer(A, B)     #Output : [[0 0]
                             #          [3 4]]
 
 
+Shorting is a concept where you essentially borrow shares from another market participant and later give it back. 
+The concept is essentially applied when you have a bearish (believe that the stock prices are likely to go down) 
+view on the stock.
+
+DFS
 
 
 
