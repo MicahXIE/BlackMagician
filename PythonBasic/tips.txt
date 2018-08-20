@@ -556,8 +556,42 @@ view on the stock.
 
 DFS
 
+14) Polynomials (多项式)
+https://blog.csdn.net/kezunhai/article/details/46271165
+
+poly -- coefficients 系数
+roots -- root 根
+polyint -- antiderivative 反倒数
+polyder -- derivative 倒数
+polyval -- evaluates at specific value 求值
+polyfit -- fit polynomial by using a least-squares approach (最小二乘法)
+
+print numpy.poly([-1, 1, 1, 10])        #Output : [  1 -11   9  11 -10]
+print numpy.roots([1, 0, -1])           #Output : [-1.  1.]
+print numpy.polyint([1, 1, 1])          #Output : [ 0.33333333  0.5         1.          0.        ]
+print numpy.polyder([1, 1, 1, 1])       #Output : [3 2 1]
+print numpy.polyval([1, -2, 0, 2], 4)   #Output : 34
+print numpy.polyfit([0,1,-1, 2, -2], [0,1,1, 4, 4], 2)
+#Output : [  1.00000000e+00   0.00000000e+00  -3.97205465e-16]
+
+The functions polyadd, polysub, polymul, and polydiv also handle proper 
+addition, subtraction, multiplication, and division of polynomial coefficients, respectively.
 
 
+15) Linear Algebra
+https://blog.csdn.net/lanchunhui/article/details/51004387
+https://blog.csdn.net/chixujohnny/article/details/51063617
+linalg.det()  --- 求矩阵的值 （标量）
+linalg.eig()  --- 求矩阵特征向量
+linalg.inv()  --- 矩阵求逆
+
+
+
+19. append or extend
+>>> output = []
+>>> output.extend([1,2,3])
+>>> output
+[1, 2, 3]
 
 
 
