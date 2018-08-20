@@ -597,7 +597,7 @@ linalg.inv()  --- 矩阵求逆
 
 20. XML
 https://pycoders-weekly-chinese.readthedocs.io/en/latest/issue6/processing-xml-in-python-with-element-tree.html
-
+XML1 and XML2 good practice for Recursion
 
 
 
