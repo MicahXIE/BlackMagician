@@ -599,6 +599,33 @@ linalg.inv()  --- 矩阵求逆
 https://pycoders-weekly-chinese.readthedocs.io/en/latest/issue6/processing-xml-in-python-with-element-tree.html
 XML1 and XML2 good practice for Recursion
 
+e.g
+import xml.etree.ElementTree as etree
+
+maxdepth = 0
+def depth(elem, level):
+    global maxdepth
+    # your code goes here
+    for child in elem:
+        depth(child, level+1)
+    
+    if maxdepth < (level+1):
+        maxdepth = level+1
+
+if __name__ == '__main__':
+    n = int(input())
+    xml = ""
+    for i in range(n):
+        xml =  xml + input() + "\n"
+    tree = etree.ElementTree(etree.fromstring(xml))
+    depth(tree.getroot(), -1)
+    print(maxdepth)
+
+
+21. Closure and Decorators
+
+http://simeonfranklin.com/blog/2012/jul/1/python-decorators-in-12-steps/
+
 
 
 
