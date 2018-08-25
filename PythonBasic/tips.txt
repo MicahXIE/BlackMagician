@@ -904,7 +904,61 @@ list compare
 https://stackoverflow.com/questions/2587402/sorting-python-list-based-on-the-length-of-the-string
 
 
+4) start() & end()
 
+>>> import re
+>>> m = re.search(r'\d+','1234')
+>>> m.end()
+4
+>>> m.start()
+0
+
+# good example for re search
+import re
+
+s = input()
+k = input()
+pattern = re.compile(k)
+r = pattern.search(s)
+if not r: print("(-1, -1)")
+while r:
+    print("({0}, {1})".format(r.start(), r.end() - 1))
+    r = pattern.search(s,r.start() + 1)
+
+
+5) Regex Substitution
+
+The re.sub() tool (sub stands for substitution) evaluates a pattern and, 
+for each valid match, it calls a method (or lambda). 
+
+import re
+
+#Squaring numbers
+def square(match):
+    number = int(match.group(0))
+    return str(number**2)
+
+print re.sub(r"\d+", square, "1 2 3 4 5 6 7 8 9")
+Output
+
+1 4 9 16 25 36 49 64 81
+
+
+small tips:
+* 匹配前一个字符0或无限次
+? 匹配前一个字符0次或1次
+
+e.g
+
+import re 
+
+s = "" # s = ''''''
+for i in range(int(input())):
+    s += str(input()) + '\n'
+s = re.sub(r'(?<= )&&(?= )', 'and', s)
+s = re.sub(r'(?<= )\|\|(?= )', 'or', s)
+    
+print (s)
 
 
 
