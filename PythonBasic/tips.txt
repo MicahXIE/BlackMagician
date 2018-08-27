@@ -957,6 +957,26 @@ small tips:
 _不需要转义字符\， -和.需要转义字符\
 
 
+multiple condition:
+# very good example. Thanks Tom!
+# multiple condition use multiple re.search instead of re.match 
+import re
+
+for _ in range(int(input())):
+    u = ''.join(sorted(input()))
+    try:
+        assert re.search(r'[A-Z]{2}', u)
+        assert re.search(r'\d\d\d', u)
+        assert not re.search(r'[^a-zA-Z0-9]', u)
+        # no repeating character
+        assert not re.search(r'(.)\1', u)
+        assert len(u) == 10
+    except:
+        print('Invalid')
+    else:
+        print('Valid')
+
+
 e.g
 
 import re 
@@ -970,7 +990,72 @@ s = re.sub(r'(?<= )\|\|(?= )', 'or', s)
 print (s)
 
 
+6) HTMLParser
 
+.handle_starttag(tag, attrs)
+
+This method is called to handle the start tag of an element. (For example: <div class='marks'>) 
+The tag argument is the name of the tag converted to lowercase. 
+The attrs argument is a list of (name, value) pairs containing the attributes found inside the tag’s <> brackets. 
+
+
+.handle_endtag(tag)
+
+This method is called to handle the end tag of an element. (For example: </div>) 
+The tag argument is the name of the tag converted to lowercase. 
+
+
+.handle_startendtag(tag,attrs)
+
+This method is called to handle the empty tag of an element. (For example: <br />) 
+The tag argument is the name of the tag converted to lowercase. 
+The attrs argument is a list of (name, value) pairs containing the attributes found inside the tag’s <> brackets.
+
+e.g
+from HTMLParser import HTMLParser
+
+# create a subclass and override the handler methods
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print "Found a start tag  :", tag
+    def handle_endtag(self, tag):
+        print "Found an end tag   :", tag
+    def handle_startendtag(self, tag, attrs):
+        print "Found an empty tag :", tag
+
+# instantiate the parser and fed it some HTML
+parser = MyHTMLParser()
+parser.feed("<html><head><title>HTML Parser - I</title></head>"
+            +"<body><h1>HackerRank</h1><br /></body></html>")
+
+
+
+
+
+
+
+.handle_comment(data) 
+This method is called when a comment is encountered (e.g. <!--comment-->). 
+The data argument is the content inside the comment tag:
+
+e.g
+from HTMLParser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+    def handle_comment(self, data):
+          print "Comment  :", data
+
+
+.handle_data(data) 
+This method is called to process arbitrary data (e.g. text nodes and the content of <script>...</script> and <style>...</style>). 
+The data argument is the text content of HTML.
+
+e.g
+from HTMLParser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+    def handle_data(self, data):
+        print "Data     :", data
 
 
 
