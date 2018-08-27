@@ -52,6 +52,6 @@ for _ in range(n):
     if '}' in s1:
         flag = 0
     
-#re.search re.findall re.finditers re.S re.DOTALL    
+#re.match re.search re.search re.findall re.finditers re.S re.DOTALL    
 matches = re.findall(regex_pattern, s, re.S)
 print(*matches, sep='\n')
