@@ -1058,7 +1058,8 @@ class MyHTMLParser(HTMLParser):
         print "Data     :", data
 
 
-
+/   除 - x除以y    b / a 输出结果 2
+//  取整除 - 返回商的整数部分（向下取整）    9//2 输出结果 4 , 9.0//2.0 输出结果 4.0
 
 
 
