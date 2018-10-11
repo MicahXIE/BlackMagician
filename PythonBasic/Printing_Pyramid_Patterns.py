@@ -45,6 +45,16 @@ https://www.geeksforgeeks.org/print-symmetric-double-triangle-pattern/
 
 import string
 
+'''
+this function is used to print below pattern
+
+----c----
+--c-b-c--
+c-b-a-b-c
+--c-b-c--
+----c----
+'''
+
 def print_rangoli(size):
     alpha = string.ascii_lowercase
     
@@ -55,6 +65,18 @@ def print_rangoli(size):
     print('\n'.join(L[:0:-1]+L))
 
 
+
+'''
+below functions are used to print below part:
+
+x
+ x
+o x
+ o x
+x o x
+ x o x
+'''
+#{
 def printx(size, flag):
 
 	num = int(size//2) + 1
@@ -97,16 +119,7 @@ def printo(size, flag):
 			else:
 				print('x ', end='')
 
-'''
-this function is used to print below part:
 
-x
- x
-o x
- o x
-x o x
- x o x
-'''
 def print_pyramid(size): 
 	#indicate the last line
 	flag=0
@@ -120,8 +133,25 @@ def print_pyramid(size):
 		else:
 			printo(i,flag)
 		print()
+#}
 
+'''
+below functions are used to print below pattern:
 
+     x
+      x
+     o x
+      o x
+     x o x
+x o x x o x
+ x o x
+  x o
+   x o
+    x
+     x
+'''
+
+#{
 def printx1(size, flag, lst = []):
 
 	num = int(size//2) + 1
@@ -173,19 +203,7 @@ def printo1(size, flag, lst=[]):
 
 	return lst
 
-'''
-     x
-      x
-     o x
-      o x
-     x o x
-x o x x o x
- x o x
-  x o
-   x o
-    x
-     x
-'''
+
 def print_pyramid1(size):
 	#indicate the last line
 	flag=0
@@ -219,6 +237,7 @@ def print_pyramid1(size):
 	print('\n'.join(L3))
 	print()
 
+	# add space for L part
 	for j in range(len(L1)):
 		if(j == (len(L1)-1)):
 			L1[j] = L3[0]+L1[j][1:]
@@ -228,8 +247,10 @@ def print_pyramid1(size):
 
 	print(L1)
 	print(L3[1:])
+	# combine two parts
 	print('\n'.join(L1+L3[1:]))
 
+#}
 
 if __name__ == '__main__':
     n = int(input())
