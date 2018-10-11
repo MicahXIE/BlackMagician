@@ -40,6 +40,7 @@ x o x x o x
      x
 
 https://www.hackerrank.com/challenges/text-alignment/problem
+https://www.geeksforgeeks.org/print-symmetric-double-triangle-pattern/
 '''
 
 import string
