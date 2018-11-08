@@ -9,9 +9,13 @@ mongo
 >show dbs
 >use jd
 >db.jd.insert({"test":0})
+> db.createCollection("product")
 >show collections
 > db.mycol2.insert({"name" : "菜鸟教程"})
 > show collections
 >quit()
 
 3. plt
+
+ls -lrt /System/Library/Fonts
+https://zhuanlan.zhihu.com/p/37259909

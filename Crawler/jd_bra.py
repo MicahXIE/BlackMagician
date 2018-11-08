@@ -16,8 +16,8 @@ product_db = db.product
 def save_mongo(comments):
 
 	for comment in comments:
-		product_data = {}
 
+		product_data = {}
 		# colour
 		# flush_data clean data
 		product_data['product_color'] = flush_data(comment['productColor'])
@@ -28,6 +28,7 @@ def save_mongo(comments):
 		# create time 
 		product_data['create_time'] = flush_data(comment['creationTime'])
 
+		print("#################crawl product data: ", product_data)
 		product_db.insert(product_data)
 
 # data cleaning
@@ -100,7 +101,7 @@ def get_comment_message(product_id):
 		html = response.text
 		#delete the redundant chars
 		html = html.replace('fetchJSON_comment98vv53282(','').replace(');','')
-		data = json.load(html)
+		data = json.loads(html)
 		comments = data['comments']
 
 		# add one thread to save content to db
@@ -158,7 +159,7 @@ for t in p_text:
 	t.set_size(20)
 
 plt.axis('equal')
-plt.title('bra color proportion', fontproperties='SimHei')
+plt.title('bra color proportion', fontproperties='Songti')
 plt.legend()
 plt.show()
 
