@@ -3,3 +3,15 @@
 (.*?)
 
 2. mongodb:
+mongodb
+mongo
+
+>show dbs
+>use jd
+>db.jd.insert({"test":0})
+>show collections
+> db.mycol2.insert({"name" : "菜鸟教程"})
+> show collections
+>quit()
+
+3. plt
