@@ -15,6 +15,8 @@ for i in yield_test(5):
 
 '''
 
+yield, decorator, regular expression, moudule import, multithread GIL Signal
+
 yield call(0) --> return 0
 print("i=", 0)
 
