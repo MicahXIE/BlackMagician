@@ -12,6 +12,7 @@ class point:
 		self.available = []
 		self.value = 0
 
+#pointLst = []
 
 def checkAvailableValue(value, pointObj, sudokuLst):
 	if value in sudokuLst[pointObj.x]:
@@ -58,7 +59,27 @@ def initPoint(sudokuLst):
 	return pointLst
 
 def tryInsert(pointObj, sudokuLst):
-	pass
+
+	for value in pointObj.available:
+		pointObj.value = value
+
+		#print("x: %d, y: %d  value: %d" % (pointObj.x, pointObj.y, pointObj.value))
+
+		if checkPointValue(pointObj, sudokuLst):
+			sudokuLst[pointObj.x][pointObj.y] = pointObj.value
+
+			if len(pointLst) <= 0:
+				printSudoku(sudokuLst)
+				exit()
+			else:
+				pointObjNext = pointLst.pop()
+				tryInsert(pointObjNext, sudokuLst)
+				sudokuLst[pointObjNext.x][pointObjNext.y] = 0
+				sudokuLst[pointObj.x][pointObj.y] = 0
+				pointObjNext.value = 0
+				pointLst.append(pointObjNext)
+		else:
+			pass
 
 
 def printSudoku(sudokuLst):
@@ -82,7 +103,12 @@ if __name__ == '__main__':
 	[0,0,8,5,0,0,0,1,0],
 	[0,9,0,0,0,0,4,0,0]]
 
+	pointLst = initPoint(sudokuLst)
 	printSudoku(sudokuLst)
+	print("")
+ 	
+	pointObj = pointLst.pop()
+	tryInsert(pointObj, sudokuLst)
 
 
 
