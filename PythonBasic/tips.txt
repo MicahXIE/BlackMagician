@@ -1063,3 +1063,12 @@ class MyHTMLParser(HTMLParser):
 
 
 
+24. python 2 raw_input() and python 3 input()
+
+
+
+
+
+
+
+
