@@ -21,3 +21,8 @@ if key in dict: # python 3.x
 dict.items()
 dict.keys()
 dict.values()
+
+2. Python List
+
+(1) initialization
+lst = [0]*5
