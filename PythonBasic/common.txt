@@ -1,0 +1,23 @@
+1. Python Dictionary
+
+(1) initialization
+dict = {}
+dict = {'a':1, 'b':2, 'c':3}
+
+(2) get key value
+dict['b']
+
+(3) update the value
+dict['b']=6
+
+(4) delete key or dict
+del dict['c']
+del dict
+
+(5) dictionary build-in functions
+dict.clear()
+dict.has_key(key) # python 2.x
+if key in dict: # python 3.x
+dict.items()
+dict.keys()
+dict.values()

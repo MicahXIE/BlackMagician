@@ -716,7 +716,7 @@ Python supports a feature called function closures which means that inner functi
 you might even think of it as similar to object oriented techniques in some ways: outer is a constructor for inner with x acting like a private member variable. 
 
 
-5) Decorrators
+5) Decorators
 
 A decorator is just a callable that takes a function as an argument and returns a replacement function. We’ll start simply and work our way up to useful decorators.
 
