@@ -22,16 +22,18 @@ def quicksort(array, low, high, k):
 
 	while(i < j):
 
-		while(i < j and array[j] > key):
+		while(i < j and array[j] < key):
 			j-=1
 
-		while(i < j and array[i] <= key):
+		while(i < j and array[i] >= key):
 			i+=1
 
 		if(i < j):
 			swap(array, i, j)
 
 	swap(array, low, i)
+
+	print(array)
 
 	if i > k:
 		return quicksort(array, low, i-1, k)
@@ -42,7 +44,8 @@ def quicksort(array, low, high, k):
 
 
 if __name__ == '__main__':
-	array = [5, 4, 3, 2, 1]
+	#array = [5, 4, 3, 2, 1]
+	array = [1, 2, 3, 4, 5]
 	# start with 0, so it is 4th max
 	res = quicksort(array, 0, len(array)-1, 3)
 	print("the 4th max value is ", res)
