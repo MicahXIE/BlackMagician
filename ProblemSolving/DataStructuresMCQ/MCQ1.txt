@@ -1,0 +1,23 @@
+If we have a tree of n nodes, how many edges will it have?
+
+(A) 1			(B) (n*(n-1))/2
+(C) (n*(n-1))   (D) n-1
+
+Answer: D
+
+
+Which of the following data structures can handle updates and queries in log(n) time on an array?
+
+(A) Linked list		(B) Stack
+(C) Segment tree 	(D) Queue
+
+Answer: C
+
+
+Of the following data structures, which has a Last in First Out ordering? In other words, the one that came in last will be the first to be popped.
+
+(A) Queue		(B) Stack
+(C) Vector		(D) Array List
+
+Answer: B
+
