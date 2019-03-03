@@ -1067,6 +1067,9 @@ class MyHTMLParser(HTMLParser):
 
 
 
+25. print List
+
+https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/
 
 
 
