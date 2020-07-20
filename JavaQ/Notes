@@ -1,1 +1,65 @@
 Java has 8 primitive data types; char, boolean, byte, short, int, long, float, and double. 
+
+String.valueOf(num)  // num 可以为null
+Integer.toString(num) // num 不可以为null
+
+BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+Java String
+https://www.runoob.com/java/java-string.html
+System.out.println(A.compareTo(B)>0?"Yes":"No");
+首字母大写
+String A1 = A.substring(0,1).toUpperCase() + A.substring(1);
+
+https://www.hackerrank.com/challenges/java-anagrams/problem
+
+int[] a = new int[n];
+int[][] arr = new int[6][6];
+ArrayList<Integer> mArrayList = new ArrayList<Integer>();
+
+https://www.runoob.com/java/java-arraylist.html
+
+nextLine（）方法返回的是Enter键之前的所有字符，它是可以得到带空格的字符串的。
+next（）会自动消去有效字符前的空格，只返回输入的字符，不能得到带空格的字符串。
+
+在每一个 next（）、nextDouble()  、nextFloat()、nextInt() 等语句之后加一个nextLine（）语句，
+将被next（）去掉的Enter结束符过滤掉。（顽皮点说，因为nextLine啥都要，所以有时候要错了空格，等不到所需输入）
+
+List: LinkedList, ArrayList
+1. ArrayList是实现了基于动态数组的数据结构，而LinkedList是基于链表的数据结构；
+2. 对于随机访问get和set，ArrayList要优于LinkedList，因为LinkedList要移动指针；
+3. 对于添加和删除操作add和remove，一般大家都会说LinkedList要比ArrayList快，因为ArrayList要移动数据。但是实际情况并非这样，对于添加或删除，LinkedList和ArrayList并不能明确说明谁快谁慢，下面会详细分析。
+
+https://www.runoob.com/manual/jdk11api/java.base/java/util/ArrayList.html
+https://www.runoob.com/manual/jdk11api/java.base/java/util/LinkedList.html
+
+Set: SortedSet, HashSet
+Map: HashMap, TreeMap
+Queue: Deque (ArrayDeque, LinkedList), PriorityQueue
+List: LinkedList, ArrayList, Vector <- Stack
+
+Deque:
+https://www.jianshu.com/p/e3ce916f8db4
+HashSet
+https://blog.csdn.net/tingzhiyi/article/details/52152487
+Priority Queue
+https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html
+https://www.liaoxuefeng.com/wiki/1252599548343744/1265120632401152
+
+BufferedReader vs Scanner
+
+Java Stack
+
+https://solution.programmingoneonone.com/2020/06/hackerrank-java-priority-queue-solution.html
+private final
+
+
+
+
+
+
+
+
+
+
