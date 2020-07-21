@@ -36,7 +36,7 @@ https://www.runoob.com/manual/jdk11api/java.base/java/util/LinkedList.html
 
 Set: SortedSet, HashSet
 Map: HashMap, TreeMap
-Queue: Deque (ArrayDeque, LinkedList), PriorityQueue
+Queue: Deque (ArrayDeque, LinkedList), PriorityQueue （add/offer, remove/poll)
 List: LinkedList, ArrayList, Vector <- Stack
 
 Deque:
@@ -54,7 +54,10 @@ Java Stack
 https://solution.programmingoneonone.com/2020/06/hackerrank-java-priority-queue-solution.html
 private final
 
+Comparator -1 优先级高 1 优先级低
 
+所有泛型方法声明都有一个类型参数声明部分（由尖括号分隔），该类型参数声明部分在方法返回类型之前
+public static < E > void printArray( E[] inputArray )
 
 
 

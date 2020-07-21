@@ -66,7 +66,6 @@ class Priorities {
 
 }
 
-
 public class Solution {
     private final static Scanner scan = new Scanner(System.in);
     private final static Priorities priorities = new Priorities();
