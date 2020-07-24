@@ -60,6 +60,20 @@ Comparator -1 优先级高 1 优先级低
 public static < E > void printArray( E[] inputArray )
 
 
+Java Abstract Class
+
+Java Inheritance & Interface
+
+Note: When overriding a method, you should precede it with the @Override annotation. The parameter(s) and return type of an overridden method must be exactly the same as those of the method inherited from the supertype.
+
+instanceof 是 Java 的一个二元操作符，类似于 ==，>，< 等操作符。
+Java Iterator class can help you to iterate through every element in a collection. Here is a simple example:
+        Iterator it = mylist.iterator();
+        while(it.hasNext()){
+            Object element = it.next();
+            System.out.println((String)element);
+        }
+
 
 
 
