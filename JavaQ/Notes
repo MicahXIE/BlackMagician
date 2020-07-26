@@ -75,7 +75,7 @@ Java Iterator class can help you to iterate through every element in a collectio
         }
 
 
-
+public static int power(int n, int p) throws Exception
 
 
 
