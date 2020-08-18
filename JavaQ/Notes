@@ -78,6 +78,15 @@ Java Iterator class can help you to iterate through every element in a collectio
 public static int power(int n, int p) throws Exception
 Arrays.sort(arr, Collections.reverseOrder());
 
+1. 使用...表示可变长参数，例如
+print(String... args){
+   ...
+}
+如果要调用的方法可以和两个可变参数匹配，则出现错误
+一个方法只能有一个可变长参数，并且这个可变长参数必须是该方法的最后一个参数
+
+The singleton pattern is a design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
+
 
 
 
