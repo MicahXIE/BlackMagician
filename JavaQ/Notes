@@ -85,8 +85,11 @@ print(String... args){
 如果要调用的方法可以和两个可变参数匹配，则出现错误
 一个方法只能有一个可变长参数，并且这个可变长参数必须是该方法的最后一个参数
 
+Design Pattern
+
 The singleton pattern is a design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
 
+A factory is simply an object that returns another object from some other method call, which is assumed to be "new".
 
 
 
