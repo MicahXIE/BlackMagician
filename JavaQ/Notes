@@ -85,6 +85,10 @@ print(String... args){
 如果要调用的方法可以和两个可变参数匹配，则出现错误
 一个方法只能有一个可变长参数，并且这个可变长参数必须是该方法的最后一个参数
 
+Java annotation can be used to define the metadata of a Java class or class element. We can use Java annotation at the compile time to instruct the compiler about the build process. Annotation is also used at runtime to get insight into the properties of class elements.
+
+Java allows for Covariant Return Types, which means you can vary your return type as long you are returning a subclass of your specified return type.
+
 Design Pattern
 
 The singleton pattern is a design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
@@ -92,6 +96,10 @@ The singleton pattern is a design pattern that restricts the instantiation of a 
 A factory is simply an object that returns another object from some other method call, which is assumed to be "new".
 
 An important concept in Object-Oriented Programming is the open/closed principle, which means writing code that is open to extension but closed to modification. In other words, new functionality should be added by writing an extension for the existing code rather than modifying it and potentially breaking other code that uses it. This challenge simulates a real-life problem where the open/closed principle can and should be applied.
+
+
+
+
 
 
 
