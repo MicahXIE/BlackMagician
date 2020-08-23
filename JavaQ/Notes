@@ -89,6 +89,12 @@ Java annotation can be used to define the metadata of a Java class or class elem
 
 Java allows for Covariant Return Types, which means you can vary your return type as long you are returning a subclass of your specified return type.
 
+MD5 (Message-Digest algorithm 5) is a widely-used cryptographic hash function with a -bit hash value. Here are some common uses for MD5:
+
+To store a one-way hash of a password.
+To provide some assurance that a transferred file has arrived intact.
+
+
 Design Pattern
 
 The singleton pattern is a design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
